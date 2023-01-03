@@ -1,0 +1,184 @@
+ /*
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  Reliable, efficient delivery
+  Powered by Technology
+
+  Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful
+
+  Supervisor
+  Monitors activity to identify project roadblocks
+
+  Team Builder
+  Scans our talent network to create the optimal team for your project
+
+  Karma
+  Regularly evaluates our talent to ensure quality
+
+  Calculator
+  Uses data from past projects to provide better delivery estimates
+
+
+  ### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+ 
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 4.3em;
+}
+header p{
+   color:  hsl(229, 6%, 66%);
+}
+header h1{
+    color:hsl(234, 12%, 34%) ;
+}
+header p:first-child
+{
+    font-size:2em;
+    font-weight: 200;
+}
+header p:last-child
+{
+    font-size:0.88em;
+    font-weight: 400; 
+    margin: 1em;
+}
+main
+{
+    display: grid;
+    width: 85vw;
+    height: 80vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 2em;
+    column-gap: 2em;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+}
+.item
+{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px 0px  #ccc;
+}
+.item h2
+{
+   color:hsl(234, 12%, 34%) ;
+   font-size: 1.3em;
+   margin-left: 1.7rem;
+   margin-right: 1.7rem;
+   margin-top: 1.5em;
+   margin-bottom: 0.8em;
+
+}
+.item p{
+   color:hsl(229, 6%, 66%) ; 
+   font-size:0.8em;
+   margin-left: 1.7rem;
+   margin-right: 1.7rem;
+}
+.item svg{
+    margin-left: 75%;
+    margin-top: 11%;
+
+}
+.item-1
+{
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 2;
+ grid-row-end: 4;
+ border-top: 4px solid hsl(180, 62%, 55%);
+ border-left: 2px solid transparent;
+ border-right: 2px solid transparent;
+}
+.item-2
+{
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start:1;
+ grid-row-end: 3;
+ border-top: 4px solid hsl(0, 78%, 62%) ;
+ border-left: 2px solid transparent;
+ border-right: 2px solid transparent;
+}
+.item-3
+{
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 3;
+ grid-row-end: 5;
+ border-top: 4px solid hsl(34, 97%, 64%);
+ border-left: 2px solid transparent;
+ border-right: 2px solid transparent;
+}
+.item-4
+{
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 2;
+ grid-row-end: 4;
+ border-top: 4px solid hsl(212, 86%, 64%);
+ border-left: 2px solid transparent;
+ border-right: 2px solid transparent;
+}
+@media screen and (max-width: 600px)  
+{
+    main
+    {
+        display: flex;
+        width: 80vw;
+        height: 30vh;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    .item-4{
+        margin-bottom: 2em;
+    }
+    header h1{
+        color:hsl(234, 12%, 34%) ;
+        font-size: 1.8em;
+    }
+    header p:first-child
+    {
+        font-size:1.7em;
+        font-weight: 200;
+    }
+    header p:last-child
+    {
+        font-size:1.05em;
+        font-weight: 400; 
+        margin: 0.8em;
+        margin-left: 3em;
+        margin-right: 3em;
+        break-inside:avoid;
+    }
+}
